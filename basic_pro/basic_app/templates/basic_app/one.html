@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% extends 'basic_app/base.html' %}
+  {% block body_block %}
+  <div class="candidate">
+    <h1>Welcome to BJP Candidate's List</h1>
+
+    {% if insert_me_2 %}
+
+    <ol>
+
+        {% for items in insert_me_2 %}
+        <li> {{ items.name }}</li>
+
+        <ul>
+
+
+        <li> {{ items.email }}</li>
+        <li> {{ items.text }}</li>
+      </ul>
+       {% endfor%}
+       {% else %}
+       <p>error</p>
+       {% endif %}
+
+
+    </ol>
+
+
+  </div>
+
+
+ {% endblock %}

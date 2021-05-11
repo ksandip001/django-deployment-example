@@ -1,0 +1,17 @@
+body{
+  background-color: orange;
+}
+
+h1{
+  text-align: center;
+  color: red;
+}
+
+h2,img{
+  text-align: center;
+
+}
+
+.candidate{
+  background-color: lightgray;
+}
